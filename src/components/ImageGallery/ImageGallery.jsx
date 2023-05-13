@@ -1,19 +1,19 @@
-import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
-import css from './ImageGallery.module.css';
+import ImageGalleryItems from '../ImageGalleryItems/ImageGalleryItems';
 import PropTypes from 'prop-types';
+import css from './ImageGallery.module.css';
 
 const ImageGallery = ({ images, onImageClick }) => {
   return (
     <ul className={css.gallery}>
-      {images.map(({ id, webformatURL, tags, largeImageURL }) => {
-        <ImageGalleryItem
+      {images.map(({ id, webformatURL, tags, largeImageURL }) => (
+        <ImageGalleryItems
           key={id}
           picture={webformatURL}
           largeImage={largeImageURL}
           tags={tags}
           onImage={onImageClick}
-        />;
-      })}
+        />
+      ))}
     </ul>
   );
 };

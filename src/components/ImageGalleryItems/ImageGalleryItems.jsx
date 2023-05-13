@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import css from './ImageGalleryItem.module.css';
+import css from './ImageGalleryItems.module.css';
 
-const ImageGalleryItem = ({ picture, tags, largeImage, onImage }) => {
+const ImageGalleryItems = ({ picture, tags, largeImage, onImage }) => {
   return (
     <li className={css.galleryItem}>
       <img
@@ -14,11 +14,11 @@ const ImageGalleryItem = ({ picture, tags, largeImage, onImage }) => {
   );
 };
 
-ImageGalleryItem.propTypes = {
+ImageGalleryItems.propTypes = {
   picture: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
   largeImage: PropTypes.string.isRequired,
   onImage: PropTypes.func.isRequired,
 };
 
-export default ImageGalleryItem;
+export default ImageGalleryItems;

@@ -85,7 +85,7 @@ class App extends Component {
           <h2 className={css.seekItem}>SEARCHING FOR: {seekWord}</h2>
         )}
         {<ImageGallery images={pics} onImageClick={this.openModal} />}
-
+       
         {isLoading && <Loader />}
         {page > 1 && <Button onLoadMore={this.fetchPics} />}
         {showModal && (

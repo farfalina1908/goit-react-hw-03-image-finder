@@ -5,7 +5,7 @@ const Loader = () => {
     <div className="loader">
       <Audio
         type="Audio"
-        color="#00BFFF"
+        color="#90b4ce"
         height={100}
         width={100}
         timeout={3000}
